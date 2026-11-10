@@ -1,29 +1,29 @@
-# mergeone v0.5.1 — sha256 values from the release's checksums.txt (signed keyless with Sigstore).
+# mergeone v0.6.0 — sha256 values from the release's checksums.txt (signed keyless with Sigstore).
 #   brew install haalp/tap/mergeone
 class Mergeone < Formula
   desc "Merge gateway: typed decisions from a small model, a policy you own, pass/hold/block; never merges"
   homepage "https://mergeone.dev"
-  version "0.5.1"
+  version "0.6.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/haalp/mergeone/releases/download/v#{version}/mergeone_darwin_arm64.tar.gz"
-      sha256 "540cba9e16d14b4dfb574a9660b27900ed5f0ba4af80d55280bd60c2655a2746"
+      sha256 "39a549572023644f01a04e926931bf164b762c9018659124a6196cfd59ba2e58"
     end
     on_intel do
       url "https://github.com/haalp/mergeone/releases/download/v#{version}/mergeone_darwin_amd64.tar.gz"
-      sha256 "fcef76f56e4e03b1f2dfe61731daa25d3481df64b7ef8467220067e497f71168"
+      sha256 "0244f7a1da9945c992d1d750899481c888cf319c3b7c64df33ee93ba2cfe3f81"
     end
   end
   on_linux do
     on_arm do
       url "https://github.com/haalp/mergeone/releases/download/v#{version}/mergeone_linux_arm64.tar.gz"
-      sha256 "dd4df7aead2aa548522221914909f523e6e412d3babcb7edc636248091c144ba"
+      sha256 "bf68ee3c1355c818c85288186857204668726f0103891ddd0d1027cf7d3f2c25"
     end
     on_intel do
       url "https://github.com/haalp/mergeone/releases/download/v#{version}/mergeone_linux_amd64.tar.gz"
-      sha256 "f391f174735fc4f249a4911265ab0e4fa6247e90e7b3f1572754caa39f95bd11"
+      sha256 "49c64d5b9cd81f983acb69659ed16d6adcd37bd242ba8ac3ab761e72bd8420a0"
     end
   end
 
